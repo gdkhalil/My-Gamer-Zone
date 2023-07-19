@@ -56,7 +56,7 @@ header {
     font-size: 2.2rem;
 }
 
-.nav-logo .g-color {
+.g-color {
     color: #FF42A5;
 }
 
@@ -351,9 +351,56 @@ header {
     color: #FF42A5;
 }
 /* footer section style  */
+footer{
+    background-color: #0B0223;
+    padding: 30px;
+}
+.footer-section{
+    max-width: 992px;
+    height: 65vh;
+    text-align: center;
+    margin: 60px auto 0;
+}
 .footer-logo{
     display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    align-items: center;
 }
 .footer-logo h3{
     font-size: 2.5rem;
+    color: #fff;
+}
+.footer-logo img{
+    margin-right: 10px;
+    width: 8%;
+    height: 40px;
+}
+.footer-text{
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.footer-icon{
+    font-size: 40px;
+    width: 60%;
+    margin: 0 auto;
+    
+}
+.footer-icon a{
+    color: #fff;
+    margin: 0 15px;
+}
+.footer-policy{
+    color: #ffffff90;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    font-size: 14px;
+}
+.last-text{
+    color: #ffffff90;
+    margin-top: 50px;
+    font-size: 11px;
 }
