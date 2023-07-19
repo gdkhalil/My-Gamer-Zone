@@ -1,17 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
 /* Common style  */
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.primary-btn {
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: 0;
+    color: #fff;
+    background-color: #FF42A5;
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.gradient-color {
+    background-image: linear-gradient(180deg, #FF42A5, #9628fd);
+    color: transparent;
+    -webkit-background-clip: text;
 }
 
 /* Header section style */
-header{
+header {
     background-color: #fff;
-    border: 1px solid red;
 }
-.nav-container{
+
+.nav-container {
     display: flex;
     max-width: 992px;
     justify-content: space-around;
@@ -19,45 +38,231 @@ header{
     height: 80px;
     margin: 0 auto;
 }
-.nav-logo{
+
+.nav-logo {
     display: flex;
     width: 50%;
     align-items: center;
 }
-.nav-logo img{
-    width: 20%;
+
+.nav-logo img {
+    width: 18%;
     height: 40px;
     margin-right: 10px;
 }
-.nav-logo h3{
+
+.nav-logo h3 {
     font-size: 2.2rem;
 }
-.nav-logo .g-color{
+
+.nav-logo .g-color {
     color: #FF42A5;
 }
-.nav-items{
+
+.nav-items {
     display: flex;
     width: 50%;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
 }
-.nav-items a{
+
+.nav-items a {
     text-decoration: none;
     font-size: 1rem;
     color: #000;
     font-weight: bold;
 }
-.nav-items .follow-items{
+
+.nav-items .follow-items {
     background-color: #ebebeb;
     padding: 10px 20px;
     display: flex;
     gap: 10px;
     border-radius: 5px;
-    
+
 }
-.follow-items .fa-brands{
+
+.follow-items .fa-brands {
     font-size: 25px;
 }
-.follow-items .fa-youtube{
+
+.follow-items .fa-youtube {
     color: red;
+}
+
+/* banner section style  */
+.banner-section {
+    background-color: #FBF5FD;
+}
+
+.top-section {
+    display: flex;
+    margin: 0 auto;
+    max-width: 992px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-section {
+    width: 50%;
+}
+
+.left-section h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.left-section h2 {
+    font-size: 3.8rem;
+    font-weight: 800;
+}
+
+.left-section p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+
+.right-section {
+    width: 50%;
+}
+
+.right-section img {
+    width: 100%;
+}
+
+.blue-btn {
+    background-color: #11c3e2e7;
+}
+
+/* gamer section style */
+.gamer-section {
+    background-color: #fffeeb;
+}
+
+.gamer-container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 992px;
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.gamer-img {
+    width: 50%;
+    padding-right: 10px;
+}
+
+.gamer-img img {
+    width: 100%;
+}
+
+.gamer-content {
+    width: 50%;
+    text-align: end;
+}
+
+.gamer-content {
+    width: 50%;
+    text-align: right;
+    padding-left: 10px;
+}
+
+.gamer-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.gamer-content p {
+    color: #534C64;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.gamer-content h5 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.gamer-content h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+/* online section style  */
+#online-section {
+    background-color: #fff;
+}
+
+.online-games-container {
+    max-width: 992px;
+    height: 100vh;
+    text-align: center;
+    margin: 80px auto 0;
+}
+
+.online-games-container h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.online-all-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.online-card img {
+    width: 100%;
+    height: 80%;
+    margin-bottom: 10px;
+}
+
+.online-card p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+}
+
+.online-card {
+    position: relative;
+}
+
+.overlay{
+    opacity: 0;
+    transition: .4s ease;
+}
+.overlay-items{
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    font-size: 1rem;
+}
+.overlay-items .fa-solid{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.overlay-items h3{
+    color: #FF42A5;
+}
+
+.online-card:hover .overlay {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    background-color: rgba(20, 15, 15, 0.8);
+    border: 3px solid #FF42A5;
+    border-radius: 8px;
 }
