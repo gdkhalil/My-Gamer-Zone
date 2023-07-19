@@ -272,6 +272,9 @@ header {
 
 /* play section style  */
 .play-section{
+    background-color: #fff;
+}
+.play-container{
     display: flex;
     margin: 0 auto;
     max-width: 992px;
@@ -308,4 +311,49 @@ header {
     position: absolute;
     left: -60px;
     bottom: -40px;
+}
+/* btn-section style  */
+.btn-section{
+    background-color: #fffeeb;
+}
+.btn-container{
+    padding: 30px 0;
+    margin: 200px auto 0;
+    max-width: 992px;
+    height: 45vh;
+    align-items: center;
+   justify-items: center;
+    
+}
+.btn-five-items{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 30px;
+}
+.btn-four-items{
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+.btn-item{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+.btn-item img{
+    margin-right: 8px;
+    width: 45px;
+}
+.btn-item:hover{
+    border: 2px solid #FF42A5;
+    border-radius: 50px;
+    color: #FF42A5;
+}
+/* footer section style  */
+.footer-logo{
+    display: flex;
+}
+.footer-logo h3{
+    font-size: 2.5rem;
 }
