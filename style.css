@@ -460,7 +460,9 @@ footer{
         flex-direction: column;
         margin-top: 2000px;
         text-align: center;
-
+    }
+    .play-img-content{
+        width: 70%;
     }
     .play-content p{
         margin-bottom: 30px;
