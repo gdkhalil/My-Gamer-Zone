@@ -416,8 +416,9 @@ footer{
     {
         flex-direction: column;
         width: 100%;
-        height: 40vh;
+        height: 50vh;
         gap: 20px;
+        
     }
     .nav-logo{
         margin: 0 auto;
@@ -485,7 +486,7 @@ footer{
     .play-container{
         width: 90%;
         flex-direction: column;
-        margin-top: 1150px;
+        margin-top: 1500px;
         margin-bottom: 60px;
     }
     .play-content{
@@ -544,9 +545,6 @@ footer{
         flex-direction: column-reverse;
         margin-top: 60px;
     }
-    .left-section{
-        width: 70%;
-    }
     .right-section{
         width: 70%;
     }
@@ -598,7 +596,7 @@ footer{
     .play-container{
         width: 90%;
         flex-direction: column;
-        margin-top: 350px;
+        margin-top: 550px;
         margin-bottom: 60px;
     }
     .play-content{
