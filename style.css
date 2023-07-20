@@ -100,6 +100,7 @@ header {
     display: flex;
     margin: 0 auto;
     max-width: 992px;
+    min-height: 700px;
     height: 600px;
     align-items: center;
     justify-content: center;
@@ -146,7 +147,7 @@ header {
     display: flex;
     margin: 0 auto;
     max-width: 992px;
-    height: 75vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
 }
@@ -186,12 +187,12 @@ header {
 }
 
 .gamer-content h5 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 20px;
 }
 
 .gamer-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 800;
 }
 
@@ -277,9 +278,9 @@ header {
 }
 .play-container{
     display: flex;
-    margin: 0 auto;
+    margin: 80px auto 0;
     max-width: 992px;
-    height: 60vh;
+    height: 550px;
     align-items: center;
     justify-content: center;
 }
@@ -294,17 +295,19 @@ header {
     margin-bottom: 15px;
 }
 .play-img-content{
-    width: 100%;
+    width: 50%;
+    
 }
 .play-img{
-    width: 75%;
-    height: 200;
+    width: 70%;
     margin-left: 10px;
     position: relative;
     left: 150px;
+    
 }
 .play-img img{
     width: 100%;
+    display: block;
     
 }
 .play-img .small-img{
@@ -319,28 +322,26 @@ header {
 }
 .btn-container{
     padding: 30px 0;
-    margin: 200px auto 0;
+    margin: 30px auto 0;
     max-width: 992px;
-    height: 45vh;
+    height: 270px;
     align-items: center;
-   justify-items: center;
+    justify-items: center;
     
 }
-.btn-five-items{
+.btn-grid-items{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-bottom: 30px;
+    margin: 50 auto 0;
+
 }
-.btn-four-items{
-    margin-left: 25px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    
-}
+
 .btn-item{
     display: flex;
     align-items: center;
     padding: 8px;
+   
 }
 .btn-item img{
     margin-right: 8px;
@@ -358,9 +359,8 @@ footer{
 }
 .footer-section{
     max-width: 992px;
-    height: 65vh;
     text-align: center;
-    margin: 60px auto 0;
+    margin: 40px auto 0;
 }
 .footer-logo{
     display: flex;
@@ -416,35 +416,59 @@ footer{
     {
         flex-direction: column;
         width: 100%;
-        height: 100vh;
+        height: 70vh;
     }
     .nav-logo{
         margin: 0 auto;
     }
+    .nav-logo img {
+        width: 26%;
+        height: 40px;
+    }
+
+    /* banner repo */
+    
     .top-section{
         flex-direction: column-reverse;
+    }
+    .left-section{
+        width: 70%;
+    }
+    .right-section{
+        width: 70%;
     }
     .left-section h3 {
         font-size: 1.8rem;
         margin-top: 40px;
     }
-  
     .primary-btn{
-        padding: 10px;
+        padding: 10px 20px;
     }
+
+    /* gammer repo  */
+    
     .gamer-container{
         flex-direction: column;
-        margin-top: 300px;
-
+    }
+    .gamer-img{
+        width: 100%;
     }
     .gamer-content{
+        width: 80%;
         text-align: center;
+        padding: 30px 0;
     }
+    .gamer-content h2{
+        font-size: 1.8rem;        
+    }
+
+    /* online repo  */
+
     .online-games-container{
-        margin-top: 320px;
+        width: 90%; 
     }
     .online-games-container h2{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     .online-all-cards{
         grid-template-columns: 1fr;
@@ -454,28 +478,44 @@ footer{
         width: 80%;
         margin: 0 auto;
     }
+
+    /* play repo  */
+
     .play-container{
-        width: 500px;
-        min-height: 500px;
+        width: 90%;
         flex-direction: column;
-        margin-top: 2000px;
+        margin-top: 1500px;
+    }
+    .play-content{
+        width: 90%;
         text-align: center;
     }
+    .play-content h2{
+        font-size: 1.6rem;
+    }
     .play-img-content{
-        width: 70%;
+        width: 100%;
+        padding: 30px 0;
+        position: relative;
+        left: -80px;
+        margin-bottom: 30px; 
     }
-    .play-content p{
-        margin-bottom: 30px;
-    }
-    .btn-container{
+
+    /* btn repo */
+
+   .btn-grid-items{
+        grid-template-columns: 1fr 1fr 1fr;
+   }
+   /* footer */
+   .footer-logo img{
+    width: 19%;
+    height: 40px;
+   }
+   .footer-text{
         flex-direction: column;
-    }
-    .btn-section{
-        margin-bottom: 200px;
-    }
-    .footer-section{
-        height: 500px;
-    }
+        gap: 15px;
+   }
+
 }
 
 /* tablet or medium devices */
