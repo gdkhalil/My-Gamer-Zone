@@ -278,9 +278,9 @@ header {
 }
 .play-container{
     display: flex;
-    margin: 80px auto 0;
+    margin: 0px auto 0;
     max-width: 992px;
-    height: 550px;
+    height: 400px;
     align-items: center;
     justify-content: center;
 }
@@ -484,7 +484,8 @@ footer{
     .play-container{
         width: 90%;
         flex-direction: column;
-        margin-top: 1087px;
+        margin-top: 1150px;
+        margin-bottom: 60px;
     }
     .play-content{
         width: 90%;
